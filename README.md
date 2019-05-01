@@ -1,5 +1,15 @@
+Chess game created using C++ Programming language.
 
+TODO:
+*Create table
+*Create pawn
+*Create king
+*Create queen
+*Create knight
+*Create rook
+*Create bishop
 
+DONE:
 
 
 
