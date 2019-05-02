@@ -3,15 +3,16 @@
 #define _BOARD_H_
 
 #include "Square.h"
+#include <iostream>
 
 class Board
 {
 public:
-	Board();
-	~Board();
+	Board(Piece bishop);
+	void showBoard();
 
 private:
-
+	Square square[8][8];
 
 };
 

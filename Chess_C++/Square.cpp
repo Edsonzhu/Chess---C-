@@ -1,24 +1,29 @@
 #include "Square.h"
 
 Square::Square() {
-	this->piece = false;
+	this->piece = nullptr;
 	this->catchByBlack = 0;
 	this->catchByWhite = 0;
 }
 
 bool Square::hasPiece()
 {
-	return this->piece;
+	return piece == nullptr ? false : true;
 }
 
-void Square::addPiece()
+void Square::showPiece()
 {
-	this->piece = true;
+	this->piece->showPiece();
+}
+
+void Square::addPiece(Piece* recPiece)
+{
+	this->piece = recPiece;
 }
 
 void Square::removePiece()
 {
-	this->piece = false;
+	this->piece = 0;
 }
 
 void Square::addCatchByWhite()

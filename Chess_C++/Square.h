@@ -1,13 +1,15 @@
 #pragma once
 #ifndef _SQUARE_H_
 #define _SQUARE_H_
+#include "Piece.h"
 
 class Square
 {
 public:
 	Square();
 	bool hasPiece();
-	void addPiece();
+	void showPiece();
+	void addPiece(Piece *recPiece);
 	void removePiece();
 	void addCatchByWhite();
 	void removeCatchByWhite();
@@ -17,7 +19,7 @@ public:
 	bool checkCatchByBlack();
 
 private:
-	bool piece;
+	Piece* piece;
 	int catchByWhite;
 	int catchByBlack;
 };
